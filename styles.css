@@ -24,32 +24,48 @@ nav a:hover{
     text-decoration: underline;
 }
 
-.flexbox{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+main{
+maring:20px auto;
+display: flex;
+flex-wrap: wrap;
 }
+
+  }
 .flexItem{
     flex-basis: 300px;
     flex-grow: 2;
     margin: 2px;
+    background: yellow;
+    padding: 30px;
 }
-/* .grow{
-    flex-grow: ;
-} */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+main{
+    flex-basis: 300px;
+    flex-grow: 2;
+    margin: 2px;
+}
+
 img{
     width: 100%;
+    display: block;
+    margin: 1% auto;
+    border: 0;
 }
 @media screen and (min-width: 700px) {
-        .flexItem{
-            height:400px;
-            object-fit: cover;
+
+        img{
+          display: inline;
+          width: 30%;
         }
 }
-/* Bottom img gets too big after 1600px */
-@media screen and (min-width: 1600px) {
-        .flexItem{
-            flex-basis: 30%;
-            height:400px;
-        }
+
+@media screen and (min-width: 1300px) {
+    img{
+
+    }
 }
