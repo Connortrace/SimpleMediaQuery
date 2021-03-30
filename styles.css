@@ -47,7 +47,16 @@ nav a:hover{
   bottom: :10%;
   right: 5%;
 }
-
+button{
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+  background: none;
+  padding: 5px;
+  border: 2px black solid;
+  color: black;
+  font-size: 1.3em;
+}
 
 main{
 maring:20px auto;
@@ -59,7 +68,7 @@ flex-wrap: wrap;
     flex-basis: 300px;
     flex-grow: 2;
     margin: 2px;
-    background: yellow;
+    background: rgba(181, 181, 181, 0.5);
     padding: 30px;
 }
 
