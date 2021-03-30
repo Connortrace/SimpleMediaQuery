@@ -35,8 +35,8 @@ nav a:hover{
 
 /* Styles for hero or features */
 .hero{
-  background-image: image(hair.jpg);
-  height: 600px;
+  background-image: url("hair-2537564_1920.jpg");
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
