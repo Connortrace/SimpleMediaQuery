@@ -1,1 +1,1 @@
-https://connortrace.github.io/DogsNew/
+https://connortrace.github.io/SimpleMediaQuery/
