@@ -1,20 +1,34 @@
 body{
-    background-color: #CDA2D5;
+    background-color: white;
     padding:0;
     margin:0;
     font-family: helvetica, sans-serif;
 }
+
+/* Importing styles from W3Schools above - you can customize the classes below */
+.w3-section{
+background:white;
+padding:0;
+}
+.w3-section img{
+margin:auto;
+display:block;
+padding:0;
+height:1000px;
+width:1550px;
+}
+
 
 .logo{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width:60%;
-  max-width: 350px;
+  max-width: 300px;
 }
 
 nav{
-    background: grey;
+    background-color: black;
     /* height: 60px; */
     text-align: center;
     font-family: Georgia, serif;
@@ -23,7 +37,7 @@ nav{
 nav a{
     text-align: center;
     color:white;
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding:15px;
     margin:10px;
     display: inline-block;
@@ -35,7 +49,7 @@ nav a:hover{
 
 /* Styles for hero or features */
 .hero{
-  background-image: url("hair-2537564_1920.jpg");
+  background-image: url("");
   height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,7 +58,7 @@ nav a:hover{
 }
 .hero h2{
   position: absolute;
-  bottom: :10%;
+  bottom: :20%;
   right: 5%;
 }
 button{
@@ -56,7 +70,23 @@ button{
   border: 2px black solid;
   color: black;
   font-size: 1.3em;
+  border-radius: 5px;
 }
+
+.about-hero{
+  background-image: url("");
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: relative;
+}
+.about-hero h2{
+  position: absolute;
+  bottom: :10%;
+  right: 5%;
+}
+
 
 main{
 maring:20px auto;
@@ -68,7 +98,7 @@ flex-wrap: wrap;
     flex-basis: 300px;
     flex-grow: 2;
     margin: 2px;
-    background: rgba(181, 181, 181, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     padding: 30px;
 }
 
@@ -78,6 +108,21 @@ img{
     margin: 1% auto;
     border: 0;
 }
+
+footer{
+  background: rgba(0,0,0,0.8)
+  padding: 40px;
+}
+
+footer p{
+  color: white;
+}
+
+footer a{
+  color:white;
+}
+
+
 @media screen and (min-width: 700px) {
         .logo{
           /* width:200px */
@@ -85,6 +130,14 @@ img{
         img{
           display: inline;
           width: 30%;
+        }
+
+        .flexItem{
+            margin: 20px;
+        }
+
+        .flexItem:first-child{
+          margin-right: 0;
         }
 }
 

@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Highland Beauty & Barber</title>
+        <title>Connor's Camera</title>
         <link rel="stylesheet" href="styles.css"
         type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,52 +10,61 @@
     </head>
     <body>
 
-        <a href="index.html"><img class="logo" src="high.png"></a>
-
+        <a href="index.html"><img class="logo" src="logo.jpg"></a>
 
 
         <nav>
             <a href="index.html">Home</a>
-            <a href="about.html">Link 2</a>
-            <a href="contact.html">Link 3</a>
+            <a href="about.html">Rent Here</a>
+            <a href="contact.html">About</a>
         </nav>
+
+        <div class="w3-content w3-section">
+          <img class="mySlides w3-animate-fading" src="SandDunes29.jpg">
+          <img class="mySlides w3-animate-fading" src="football.jpg">
+          <img class="mySlides w3-animate-fading" src="baseball.jpg">
+          <img class="mySlides w3-animate-fading" src="soccer.jpg">
+        </div>
+
         <div class="hero">
 
-          <h2>Make an appointment</h2>
-          <button>Book Me</button>
         </div>
               <main>
                 <div class="flexItem">
-                  <h3>Services</h3>
-                  <p>At Highland Beauty & Barber, we offer a full line of beauty and wellness services.</p>
 
-                  <p>We have a unique, team-based approach to our services that enables us to offer the best possible experience while also allowing convenient appointment scheduling. Further, the team-based approach lends itself to a well-educated staff that is always growing and learning from one another.</p>
                 </div>
 
                 <div class="flexItem">
-                  <h3>Services</h3>
-                  <p>At Highland Beauty & Barber, we offer a full line of beauty and wellness services.</p>
 
-                  <p>We have a unique, team-based approach to our services that enables us to offer the best possible experience while also allowing convenient appointment scheduling. Further, the team-based approach lends itself to a well-educated staff that is always growing and learning from one another.</p>
                 </div>
 
                 <div class="flexItem">
-                  <h3>Services</h3>
-                  <p>At Highland Beauty & Barber, we offer a full line of beauty and wellness services.</p>
 
-                  <p>We have a unique, team-based approach to our services that enables us to offer the best possible experience while also allowing convenient appointment scheduling. Further, the team-based approach lends itself to a well-educated staff that is always growing and learning from one another.</p>
                 </div>
 
                 <div class="flexItem">
-                  <h3>Services</h3>
-                  <p>At Highland Beauty & Barber, we offer a full line of beauty and wellness services.</p>
 
-                  <p>We have a unique, team-based approach to our services that enables us to offer the best possible experience while also allowing convenient appointment scheduling. Further, the team-based approach lends itself to a well-educated staff that is always growing and learning from one another.</p>
                 </div>
 
               </main>
               <footer>
                 <p> &copy; 2019 Highland Beauty &amp; Barber | <a href="#"> Back to top</p>
               </footer>
+              <script>
+                var myIndex = 0;
+              carousel();
+
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 9000);
+              }
+              </script>
     </body>
 </html>
